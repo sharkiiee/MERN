@@ -1,3 +1,23 @@
+Topics:-
+-What is Synchronous and Asynchronous.
+-How Asynchronous works even when javascript is single threaded
+-setTimeout()
+-fs.readFile
+-What is event loop?
+
+Important Terms:-
+-Context Switching
+-Delegating of task
+-Busy Waiting
+-Even loop
+
+Programs:-
+-Printing sum of all the number till 100 using setTimeout() the time duration will be 2sec.
+-Sleeping our thread Synchronously by busy waiting.
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 1.Synchronous functtion:-
 
 -Doing something one after the another or one by one or one thing at a time is what Synchronous means.
@@ -7,14 +27,117 @@
 -Things are happening in parts or parallely.
 -Multiple things are context switching with each other.
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-How Asynchronous works even when javascript is single threaded:-
+-How Asynchronous works even when javascript is single threaded:-
 Example- Human brain and body is single threaded
 1.As a human we can do one thing at a time.
 2.But we can context switch between task , or we delegate task to other people.
 
+Net amount of time take to do a task can be decreased by doing two things(delegating and context switching).
+
 Context Switching:-
 Whenever we find free time or we prioritise that works like-
-chopping vegetables while water is boiling , we are not waiting for water to boil then to cut vegetables this is called context switching.
+chopping vegetables while water is boiling ,here we are not waiting for water to boil and then to cut 
+vegetables this is called context switching.
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NOTE:-
+Even if ur delegated task is been completed first you won't be able to resolve it until your thread becomes
+idle.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+setTimeout():-
+-Global function that javascript provides us.
+-With the help of setTimeout() we can perform some function after some duration.
+
+syntax-- setTimeout(function,--TimeInMiliseconds);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-Program:-
+Printing sum of all the number till 100 using setTimeout() the time duration will be 2sec.
+
+function sum(n){
+    let ans = 0;
+    for(let i=1; i<=n; i++){
+        ans = ans + i;
+    }
+    return ans;
+}
+
+function findTill100(){
+    console.log(sum(100));
+}
+
+setTimeout(findTill100,2000);
+console.log("hello world");
+
+
+output:-
+hello world
+5050
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-If we wanted to sleep our thread Synchronous then we do something called busy waiting.
+
+-Program:- Sleeping our thread Synchronously by busy waiting.
+
+function sum(n){
+    let ans = 0;
+    for(let i=1; i<=n; i++){
+        ans = ans + i;
+    }
+    return ans;
+}
+
+function findTill100(){
+    console.log(sum(100));
+}
+
+function syncsleep(){
+    for(let i=0 ; i< 1000000000; i++){
+
+    }
+}
+console.log("Program started");
+syncsleep();
+findTill100();
+console.log("hello world");
+
+
+output:-
+Program started
+5050
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-fs.readFile():-
+
+Its an Asynchronous function.
+fs.readFile() helps you to read file from your file system.
+
+syntax include:-
+
+Path of the file
+utf-8 - Encoding
+function(err,data) - Error first callback.
+
+syntax:-
+
+const fs = require("fs");
+
+fs.readFile("pathOfTheFile","utf-8", function(err,data){
+    console.log(data);
+} )
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-What is event loop?
+
+Event loop job is after a thread is free it is idle it checks the callback queue and if there is any
+asynchronous task that is been completed it will get pulled from the callback queue to call stack.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 
