@@ -1,1 +1,20 @@
- Hii there , I am from a.txt.
+1.Synchronous functtion:-
+
+-Doing something one after the another or one by one or one thing at a time is what Synchronous means.
+
+2.Asynchronous function:-
+
+-Things are happening in parts or parallely.
+-Multiple things are context switching with each other.
+
+
+How Asynchronous works even when javascript is single threaded:-
+Example- Human brain and body is single threaded
+1.As a human we can do one thing at a time.
+2.But we can context switch between task , or we delegate task to other people.
+
+Context Switching:-
+Whenever we find free time or we prioritise that works like-
+chopping vegetables while water is boiling , we are not waiting for water to boil then to cut vegetables this is called context switching.
+
+
