@@ -1,0 +1,152 @@
+
+Topics:-
+
+-app.use()
+
+Questions:-
+
+-What if we define multiple routes does it break any rules if we dont use Middlewares?
+-Difference between res.send() and res.json
+-Why we use something like app.use(express.json)== we dont know what type of data we are sending in body
+it could be text or something else so we are specifying that we are sharing json data.
+-Programs:-
+
+//Program that checks username and password of the user using middlewares--
+//Program that calculate the no. of request is been sent
+//Program of the rate limiter   
+//Find the average time your server is taking to handle requests.
+
+Terms:-
+
+-Dry cleaning
+-Over Drying
+
+Middlewares and global catches
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Before doing some operation onto the data 2 pre-checks are basically to be done
+
+1.Authentication:- 
+         Making sure this person is logged in into the website or basically we hit the backend server and check for id password and
+         other stuffs.
+
+2.Input validation:- 
+         They are trying to implement the logic but have they send correct inputs.
+
+
+FOR CHECKING THIS PRE-CHECKS WE HAVE SOMETHING CALLED:- 
+---------Middlewares----------
+
+The authentication data will be send in query parameters.
+
+example: For user kidney ,username , and password:-
+How to add contraints to our route 
+1.User needs to send the kidneyId as the query param which should be a number from 1-2(humans only have two 
+kidneys)
+localhost:3000?n=3000 //This n value here is the query parameter.
+2.User should share his username and password into the header
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Program that checks username and password of the user --
+//Dumb way of doing input validation and authentication
+
+const express = require("express");
+const app = express()
+
+app.get("/",function(req,res){
+    const kidneyId = req.query.kidneyId;
+    const username = req.headers.username;
+    const password = req.headers.password;
+
+    if(!(username == "sarthak" && password == "pass")){
+        res.status(403).json({
+            msg:"user doesn't exist"
+        })
+    }
+    if(!(kidneyId == 1 || kidneyId == 2)){
+        res.status(403).json({
+            msg:"user doesn't exist"
+        })
+    }
+    
+    res.send("your heart is healthy")
+})
+
+app.listen(3001)
+
+/* for input kidneyId = 1 or 2 and username = sarthak and password  = pass 
+    Output = your heart is healdthy
+    
+    otherwise
+    Output = user does not exist*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-What if we define multiple routes does it break any rules if we dont use Middlewares?
+
+-Breaks the rule of dry cleaning our code will become overdried.
+-your code will become quite complex .
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-Middlewares:-
+
+-Helps your code to be more readable
+-More appropriate then repeating code again and again.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Program that checks username and password of the user using middlewares--
+
+const express = require("express");
+
+const app = express();
+
+app.use(express.json());
+
+function usernameMiddleware(req,res,next){
+    const username = req.headers.username;
+    const password = req.headers.password;
+
+    if(!(username == "sarthak" && password == "pass")){
+        res.status(403).json({
+            msg:"user doesn't exist"
+        })
+    }
+    
+    next();
+}
+
+function kidneyIdMiddleware(req,res,next){
+    const kidneyId = req.query.kidneyId;
+    if(!(kidneyId == 1 || kidneyId == 2)){
+        res.status(403).json({
+            msg:"user doesn't exist"
+        })
+    }
+
+    next();
+}
+
+
+app.get("/",usernameMiddleware,kidneyIdMiddleware,function(req,res){
+
+    res.send("your heart is healthy")
+})
+
+app.listen(3001)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NOTE :- We can define multiple function in the route.
+-In route handler we can write multiple functions.
+
+------ "next" in the callback functions -
+-After doing precheck we will perform next funciton
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+app.user- it means the middleware this is been written inside the app.use() will get call everywhere after
+your end point it, the first function that is been called.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
