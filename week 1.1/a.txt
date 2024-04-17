@@ -6,6 +6,8 @@ Topics:-
 -What is event loop?
 -Promises
 -What is callback hell?
+-Asyn await
+--Difference in using .then() and using asyn await with promises.
 
 Important Terms:-
 -Context Switching
@@ -17,6 +19,8 @@ Programs:-
 -Printing sum of all the number till 100 using setTimeout() the time duration will be 2sec.
 -Sleeping our thread Synchronously by busy waiting.
 -Create a wrapper to make your own asynchronous function
+//Program of reading file using promises.
+-Program of async await.
 
 
 
@@ -53,7 +57,8 @@ idle.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-setTimeout():-
+-------------------------------------- setTimeout() -------------------------------------------------
+
 -Global function that javascript provides us.
 -With the help of setTimeout() we can perform some function after some duration.
 
@@ -118,7 +123,7 @@ Program started
 5050
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
--fs.readFile():-
+---------------------------------- fs.readFile() -----------------------------------------------------
 
 Its an Asynchronous function.
 fs.readFile() helps you to read file from your file system.
@@ -138,6 +143,9 @@ fs.readFile("pathOfTheFile","utf-8", function(err,data){
 } )
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-------------------------------- Event Loop ----------------------------------------------------------
+
 -What is event loop?
 
 Event loop job is after a thread is free it is idle it checks the callback queue and if there is any
@@ -163,7 +171,7 @@ kiratReadFile(onDone);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
- Promises:-
+ ---------------------------------- Promises --------------------------------------------------------
 
  -Promises are syntactical sugar that makes your code more pretty.
  -Promises helps you to get rid of callbacks.
