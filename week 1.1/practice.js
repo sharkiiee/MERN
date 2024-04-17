@@ -1,9 +1,18 @@
-const sarthak= [{
-    fName : "sarthak",
-    gender: "male"
-},{
-    fname: "rehal",
-    gender: "female"
-}]
+function kiratsReadFile(){
+    return new Promise((resolve)=>{
+        setTimeout(function(){
+            resolve("Hii there");
+        },5000);;
+    })
+}
 
-console.log(sarthak[0].fName);
+function main(){
+    let value = 3;
+    kiratsReadFile().then(function(value){
+        console.log(value);
+    })
+    console.log(value);
+}
+
+main();
+console.log("After main");

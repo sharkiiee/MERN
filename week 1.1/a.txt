@@ -4,6 +4,8 @@ Topics:-
 -setTimeout()
 -fs.readFile
 -What is event loop?
+-Promises
+-What is callback hell?
 
 Important Terms:-
 -Context Switching
@@ -14,6 +16,8 @@ Important Terms:-
 Programs:-
 -Printing sum of all the number till 100 using setTimeout() the time duration will be 2sec.
 -Sleeping our thread Synchronously by busy waiting.
+-Create a wrapper to make your own asynchronous function
+
 
 
 
@@ -141,3 +145,147 @@ asynchronous task that is been completed it will get pulled from the callback qu
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//-Create a wrapper to make your own asynchronous function
+
+const fs = require("fs");
+
+function kiratReadFile(cb){
+    fs.readFile("a.txt","utf-8",function(err,data){
+        cb(data);
+    });
+}
+
+function onDone(data){
+    console.log(data)
+}
+
+kiratReadFile(onDone);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+ Promises:-
+
+ -Promises are syntactical sugar that makes your code more pretty.
+ -Promises helps you to get rid of callbacks.
+
+ Problems if u dont use promises:-
+
+ -Callback hell:- Their could be a possibility that just because of one callback your process gets on 
+ hold.
+
+When you deal with promises their are two things you need to remember
+1.Promise is been done.
+2.Promise is been resolved.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Program showing promise is done.
+
+    let p = new Promise((resolve)=>{
+        
+    })
+
+    console.log(p);
+
+//Program showing promise is been resolved
+
+        let p = new Promise((resolve)=>{
+        resolve();
+    })
+
+    console.log(p);
+
+//Program of reading file using promises.
+
+    const fs = require("fs");
+
+function sReadFile(){
+
+    return new Promise((resolve)=>{
+        fs.readFile("a.txt","utf-8",function(err,data){
+            resolve(data);
+        })
+    })
+}
+
+    sReadFile().then((value)=>{
+        console.log(value);
+    });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+---------------------------------- Async Await ---------------------------------------------------
+
+Asyn await is a syntactical sugar over promises.
+
+function kiratsReadFile(){
+    return new Promise((resolve)=>{
+        setTimeout(function(){
+            resolve("Hii there");
+        },5000);;
+    })
+}
+
+async function main(){
+    let value = await kiratsReadFile();
+    console.log(value);
+    console.log("Outer");
+}
+
+main();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////    
+
+-Difference in using .then() and using asyn await with promises.
+
+when you use .then() then you will run at next statement within the function after .then() statement
+but not in asyn await.
+
+//Asyn code-
+function kiratsReadFile(){
+    return new Promise((resolve)=>{
+        setTimeout(function(){
+            resolve("Hii there");
+        },5000);;
+    })
+}
+
+async function main(){
+    let value = 3;
+    value = await kiratsReadFile();
+    console.log(value);
+}
+
+main();
+console.log("After main");
+
+Output:-
+After main
+Hii there
+
+//Using .then()
+
+function kiratsReadFile(){
+    return new Promise((resolve)=>{
+        setTimeout(function(){
+            resolve("Hii there");
+        },5000);;
+    })
+}
+
+function main(){
+    let value = 3;
+    kiratsReadFile().then(function(value){
+        console.log(value);
+    })
+    console.log(value);
+}
+
+main();
+console.log("After main");
+
+Output:-
+
+3
+After main
+Hii there
