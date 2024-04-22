@@ -1,3 +1,5 @@
+// Assignment allow people to signup and only allow signed-in users to see 
+
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const jwtPassword = "123456";
