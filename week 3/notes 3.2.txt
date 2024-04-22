@@ -7,7 +7,7 @@
 4.JWT
 5.jwt.verify()
 6.jwt.sign()
-
+.How does backend connect to database    
 
 
 
@@ -85,7 +85,10 @@ Conversion anyone can do but verification can't there is something called jwt.ve
 
 4. Local Storage:-
 
-
+    A place in your browser where you can store some data usually that are stored include-
+    1.Authentication tokens.
+    2.User language preference.
+    3.User theme preference.
 
  // Its like when ur signup you send the username and password.
  -Your backend first converts the data into hash.
@@ -94,5 +97,51 @@ Conversion anyone can do but verification can't there is something called jwt.ve
  -When the clients get back the jwt it gets stored in browsers localStorage.set(token , jwt) until user get logged out.
  -So every time user enter according to logic ur token get pick up and users doesn't have to send his username and password.
 
- Databases:-
+---------------------------------------- Database -------------------------------------------------
 
+-Database Architecture:-
+The user hits the backend.
+Backend hits the database.
+User doesn't have the access to the database/can't talk to the bd.
+
+Various types of databases-
+1.Graph database
+2.Vector database
+3.SQL database
+4.noSQL database
+
+----------------------------------------  MongoDB ---------------------------------------------
+
+-MongoDb lets you create an database.
+-In each database it lets you create tables.
+-In each table, it lets you dump json data.
+-It is schemaless
+
+------------------------------ HOW DOES BACKEND CONNECT TO THE DATABASE ------------------------------
+
+1.Express lets you create an http server.
+2.jsonwebtoken libraray lets you create jwt.
+3.Mongoose lets you connect to your database.
+
+--------------------------------------- Mongoose -----------------------------------------------------
+
+- Mongoose helps you to connect to ur database.
+- Helps you to define a schema.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-Program to insert a data (name, username, password) to ur database 
+
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb+srv://sarthak231203:saagrawal%40980@cluster0.wr1lefw.mongodb.net/");
+
+const User = mongoose.model('users' , {name: String, username: String, password: String});
+
+const user = new User({
+    name:"Mohit",
+    username:"savage",
+    password: "marvel"
+})
+
+user.save();

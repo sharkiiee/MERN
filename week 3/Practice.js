@@ -1,22 +1,16 @@
-const express = require("express");
-const zod = require("zod");
+const mongoose = require("mongoose");
 
-const app = express();
-const schema = zod.array(zod.number());
+mongoose.connect("mongodb+srv://sarthak231203:saagrawal%40980@cluster0.wr1lefw.mongodb.net/");
 
-app.use(express.json());
+const User = mongoose.model('users' , {name: String, username: String, password: String});
 
-app.post("/health-checkup",function(req,res){
-    const kidneys = req.body.kidneys;
-    const response = schema.safeParse(kidneys);
-    if(!response.success){
-        res.status(411).json({
-            msg: "Something is up with the inputs"
-        })
-    }
-    res.send({
-        response
-    })
-});
+const user = new User({
+    name:"Mohit",
+    username:"savage",
+    password: "marvel"
+})
 
-app.listen(3001)
+user.save();
+
+
+
