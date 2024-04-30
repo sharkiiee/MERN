@@ -1,0 +1,15 @@
+---------------------------------------------- Topics ------------------------------------------------
+
+1. Classes
+2. Id
+3. document variable
+4. getElementId
+5. .innerHTML
+6. parseInt()
+7. get element by class name.
+8. clearTimeout()
+
+DOM :- Ability to change your elements dynamically.
+-A tree like representation of the webpage and user can access them and manipulate them.
+
+debouncing and throthling
