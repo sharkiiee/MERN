@@ -1,0 +1,299 @@
+Topics:-
+-What is Synchronous and Asynchronous.
+-How Asynchronous works even when javascript is single threaded
+-setTimeout()
+-fs.readFile
+-What is event loop?
+-Promises
+-What is callback hell?
+-Asyn await
+--Difference in using .then() and using asyn await with promises.
+
+Important Terms:-
+-Context Switching
+-Delegating of task
+-Busy Waiting
+-Even loop
+
+Programs:-
+-Printing sum of all the number till 100 using setTimeout() the time duration will be 2sec.
+-Sleeping our thread Synchronously by busy waiting.
+-Create a wrapper to make your own asynchronous function
+//Program of reading file using promises.
+-Program of async await.
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+1.Synchronous functtion:-
+
+-Doing something one after the another or one by one or one thing at a time is what Synchronous means.
+
+2.Asynchronous function:-
+
+-Things are happening in parts or parallely.
+-Multiple things are context switching with each other.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-How Asynchronous works even when javascript is single threaded:-
+Example- Human brain and body is single threaded
+1.As a human we can do one thing at a time.
+2.But we can context switch between task , or we delegate task to other people.
+
+Net amount of time take to do a task can be decreased by doing two things(delegating and context switching).
+
+Context Switching:-
+Whenever we find free time or we prioritise that works like-
+chopping vegetables while water is boiling ,here we are not waiting for water to boil and then to cut 
+vegetables this is called context switching.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NOTE:-
+Even if ur delegated task is been completed first you won't be able to resolve it until your thread becomes
+idle.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-------------------------------------- setTimeout() -------------------------------------------------
+
+-Global function that javascript provides us.
+-With the help of setTimeout() we can perform some function after some duration.
+
+syntax-- setTimeout(function,--TimeInMiliseconds);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-Program:-
+Printing sum of all the number till 100 using setTimeout() the time duration will be 2sec.
+
+function sum(n){
+    let ans = 0;
+    for(let i=1; i<=n; i++){
+        ans = ans + i;
+    }
+    return ans;
+}
+
+function findTill100(){
+    console.log(sum(100));
+}
+
+setTimeout(findTill100,2000);
+console.log("hello world");
+
+
+output:-
+hello world
+5050
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-If we wanted to sleep our thread Synchronous then we do something called busy waiting.
+
+-Program:- Sleeping our thread Synchronously by busy waiting.
+
+function sum(n){
+    let ans = 0;
+    for(let i=1; i<=n; i++){
+        ans = ans + i;
+    }
+    return ans;
+}
+
+function findTill100(){
+    console.log(sum(100));
+}
+
+function syncsleep(){
+    for(let i=0 ; i< 1000000000; i++){
+
+    }
+}
+console.log("Program started");
+syncsleep();
+findTill100();
+console.log("hello world");
+
+
+output:-
+Program started
+5050
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+---------------------------------- fs.readFile() -----------------------------------------------------
+
+Its an Asynchronous function.
+fs.readFile() helps you to read file from your file system.
+
+syntax include:-
+
+Path of the file
+utf-8 - Encoding
+function(err,data) - Error first callback.
+
+syntax:-
+
+const fs = require("fs");
+
+fs.readFile("pathOfTheFile","utf-8", function(err,data){
+    console.log(data);
+} )
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-------------------------------- Event Loop ----------------------------------------------------------
+
+-What is event loop?
+
+Event loop job is after a thread is free it is idle it checks the callback queue and if there is any
+asynchronous task that is been completed it will get pulled from the callback queue to call stack.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//-Create a wrapper to make your own asynchronous function
+
+const fs = require("fs");
+
+function kiratReadFile(cb){
+    fs.readFile("a.txt","utf-8",function(err,data){
+        cb(data);
+    });
+}
+
+function onDone(data){
+    console.log(data)
+}
+
+kiratReadFile(onDone);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+ ---------------------------------- Promises --------------------------------------------------------
+
+ -Promises are syntactical sugar that makes your code more pretty.
+ -Promises helps you to get rid of callbacks.
+
+ Problems if u dont use promises:-
+
+ -Callback hell:- Their could be a possibility that just because of one callback your process gets on 
+ hold.
+
+When you deal with promises their are two things you need to remember
+1.Promise is been done.
+2.Promise is been resolved.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Program showing promise is done.
+
+    let p = new Promise((resolve)=>{
+        
+    })
+
+    console.log(p);
+
+//Program showing promise is been resolved
+
+        let p = new Promise((resolve)=>{
+        resolve();
+    })
+
+    console.log(p);
+
+//Program of reading file using promises.
+
+    const fs = require("fs");
+
+function sReadFile(){
+
+    return new Promise((resolve)=>{
+        fs.readFile("a.txt","utf-8",function(err,data){
+            resolve(data);
+        })
+    })
+}
+
+    sReadFile().then((value)=>{
+        console.log(value);
+    });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+---------------------------------- Async Await ---------------------------------------------------
+
+Asyn await is a syntactical sugar over promises.
+
+function kiratsReadFile(){
+    return new Promise((resolve)=>{
+        setTimeout(function(){
+            resolve("Hii there");
+        },5000);;
+    })
+}
+
+async function main(){
+    let value = await kiratsReadFile();
+    console.log(value);
+    console.log("Outer");
+}
+
+main();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////    
+
+-Difference in using .then() and using asyn await with promises.
+
+when you use .then() then you will run at next statement within the function after .then() statement
+but not in asyn await.
+
+//Asyn code-
+function kiratsReadFile(){
+    return new Promise((resolve)=>{
+        setTimeout(function(){
+            resolve("Hii there");
+        },5000);;
+    })
+}
+
+async function main(){
+    let value = 3;
+    value = await kiratsReadFile();
+    console.log(value);
+}
+
+main();
+console.log("After main");
+
+Output:-
+After main
+Hii there
+
+//Using .then()
+
+function kiratsReadFile(){
+    return new Promise((resolve)=>{
+        setTimeout(function(){
+            resolve("Hii there");
+        },5000);;
+    })
+}
+
+function main(){
+    let value = 3;
+    kiratsReadFile().then(function(value){
+        console.log(value);
+    })
+    console.log(value);
+}
+
+main();
+console.log("After main");
+
+Output:-
+
+3
+After main
+Hii there

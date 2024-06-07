@@ -1,0 +1,147 @@
+
+---------------------------------------------TOPICS----------------------------------------------------
+
+1.Fetch()
+2.Hashing
+3.Encryption
+4.JWT
+5.jwt.verify()
+6.jwt.sign()
+.How does backend connect to database    
+
+
+
+
+
+---------------------------------- Fetch()-------------------------------------------------------
+
+Browser provides you function so that you can send request to server and take back the response. 
+i.e Fetch.
+
+-Part of the javascript runtime. - NOT SUPPOSE TO BE PART OF JAVASCRIPT .
+A website needs to hit other backend servers.
+
+Fetch()- 
+It lets you fetch data from backend.
+Its a asynchronous call.
+
+--Fetching default itself takes the GET route request.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        async function getAnimalData(){
+            const response = await fetch("https://fakerapi.it/api/v1/persons");
+            const finalData = await response.json();      
+        }
+
+    </script>
+
+    <button onclick="getAnimalData()">Get animal data</button>
+    
+</body>
+
+</html>
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+----------------------------------------------- Authentication ------------------------------------------
+
+Before going to authentication lets understand some crpytography jargons
+
+1.Hashing:-
+
+-We hash our password before store them into database.
+-converting a simple string into something complicated gibrish.
+-A hash code never convert backs to string.
+-For verification same string get converted into hash code and hash code is compared to the hash code already present.
+
+- Password---------------> Hashcode
+
+2.Encryption:-
+
+- your string get converted into something gibrish and that encrypted data can back converted to string also.
+- It is 2 way.
+- A secret key is needed to decrypt the data.
+
+3. JWT (Json web toknes):-
+
+jwt is mainly used to create tokens.
+
+-json - Only works for json data. 
+-Web -  Used it in a web.
+-Tokens - The input is converted and generates a string known a token.
+
+Using Jwt ur input gets converted into some output and whomesover having that output can produce the same input.
+
+Conversion anyone can do but verification can't there is something called jwt.verify() function that verifies the password and the input . It is similar to bank anyone can see the check but only the bank can verify the cheque.
+
+4. Local Storage:-
+
+    A place in your browser where you can store some data usually that are stored include-
+    1.Authentication tokens.
+    2.User language preference.
+    3.User theme preference.
+
+ // Its like when ur signup you send the username and password.
+ -Your backend first converts the data into hash.
+ -Then checks from the database whether the credentials are correct or not.
+ -If credentials are correct then backend send the jwt.
+ -When the clients get back the jwt it gets stored in browsers localStorage.set(token , jwt) until user get logged out.
+ -So every time user enter according to logic ur token get pick up and users doesn't have to send his username and password.
+
+---------------------------------------- Database -------------------------------------------------
+
+-Database Architecture:-
+The user hits the backend.
+Backend hits the database.
+User doesn't have the access to the database/can't talk to the bd.
+
+Various types of databases-
+1.Graph database
+2.Vector database
+3.SQL database
+4.noSQL database
+
+----------------------------------------  MongoDB ---------------------------------------------
+
+-MongoDb lets you create an database.
+-In each database it lets you create tables.
+-In each table, it lets you dump json data.
+-It is schemaless
+
+------------------------------ HOW DOES BACKEND CONNECT TO THE DATABASE ------------------------------
+
+1.Express lets you create an http server.
+2.jsonwebtoken libraray lets you create jwt.
+3.Mongoose lets you connect to your database.
+
+--------------------------------------- Mongoose -----------------------------------------------------
+
+- Mongoose helps you to connect to ur database.
+- Helps you to define a schema.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-Program to insert a data (name, username, password) to ur database 
+
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb+srv://sarthak231203:saagrawal%40980@cluster0.wr1lefw.mongodb.net/");
+
+const User = mongoose.model('users' , {name: String, username: String, password: String});
+
+const user = new User({
+    name:"Mohit",
+    username:"savage",
+    password: "marvel"
+})
+
+user.save();
