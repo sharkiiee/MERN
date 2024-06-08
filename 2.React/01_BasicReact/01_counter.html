@@ -1,0 +1,19 @@
+<!-- Simple program to create a counter button , everytime we click on it increases the count value. -->
+
+<!DOCTYPE html>
+<html>
+<script>
+  function onButtonPress() {
+    const currentValue = document.getElementById("btn").innerHTML;
+    console.log(currentValue.split(" "))
+    const currentCounter = currentValue.split(" ")[1];
+    const newCounter = parseInt(currentCounter) + 1;
+    document.getElementById("btn").innerHTML = "Counter " + newCounter;
+  }
+</script>
+
+<body>
+  <button onclick="onButtonPress()" id="btn">Counter 0</button>
+</body>
+
+</html>
