@@ -48,4 +48,5 @@ Other:-
 3. Give me how this state is connected to these components.
 
 **01_Programs:-**
-1. Without using react create a counter application that increases the count value every time we click on it. Use concepts of component and state.
+1. Simple program to create a counter button , everytime we click on it increases the count value. 
+2. Without using react create a counter application that increases the count value every time we click on it. Use concepts of component and state.
