@@ -41,10 +41,42 @@ Following is the example of state :-
 - set count function is state updater.
 - useState() method provides value to the state.
 
+#### How to define state as good developer
+- Define state 
+- Define component and connect state to the component.
+- re-render the component.
+
+		import { useState } from "react"
+		function App()
+		{
+			//Defining State
+		    const [count,setCount] = useState(0);
+			//Rerendering
+		    return(
+		        <>
+		            <CustomButton count={count} setCount = {setCount} ></CustomButton>
+		        </>
+				 )
+		}
+			
+		// component
+		
+		function CustomButton(props)
+		{
+			 function onclickHandler()
+		    {
+				 props.setCount(props.count +1);
+		    }
+		    return <button onClick={onclickHandler}>Counter {props.count}</button>
+		}
+		
+		export default App
+\
 
 **02_Programs**
 
 1.  Create you own custom react and create link to the google in it.
 2.  Create counter button using react 
 	- Must have cleaner syntax
+3. Create a basic todo application showing title and description of three to-dos.
 	  
