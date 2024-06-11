@@ -72,6 +72,15 @@ Following is the example of state :-
 		
 		export default App
 \
+#### How to display array of objects
+
+`JSON.stringify(nameOftheObject)`
+
+**How to add another element to the array**
+Their is this `...` using this we can add another element to the array.
+
+	arr ---> [2,3]
+	[...arr,4] ---> [2,3,4]
 
 **02_Programs**
 
@@ -79,4 +88,5 @@ Following is the example of state :-
 2.  Create counter button using react 
 	- Must have cleaner syntax
 3. Create a basic todo application showing title and description of three to-dos.
+4. Add a button to the todo application that inserts the new todo.
 	  

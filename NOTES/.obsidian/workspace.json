@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/02_Basic React.md",
+                "file": "EXPRESS/05_Authentication.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "009b3cd750217479",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "EXPRESS/API.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97654ea796eb3118",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "EXPRESS/API.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38d78075fade8061",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/03_Basic React.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/02_Basic React.md",
+                "file": "React/03_Basic React.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/02_Basic React.md",
+                "file": "React/03_Basic React.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/02_Basic React.md"
+                "file": "React/03_Basic React.md"
               }
             }
           }
@@ -146,11 +183,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "603127c322a4e5a4",
+  "active": "38d78075fade8061",
   "lastOpenFiles": [
-    "React/01_Basic React.md",
+    "EXPRESS/06_Global Catches.md",
+    "React/03_Basic React.md",
+    "React/03_Basic React.md",
     "React/02_Basic React.md",
-    "EXPRESS/Authentication.md",
-    "EXPRESS/API.md"
+    "React/01_Basic React.md",
+    "EXPRESS/07_Zod.md",
+    "EXPRESS/API.md",
+    "EXPRESS/04_Middleware's.md",
+    "EXPRESS/03_Request Methods.md",
+    "EXPRESS/05_Authentication.md",
+    "Nodejs/07_Arrays.md",
+    "Nodejs/09_Filter.md",
+    "Nodejs/08_Maps.md",
+    "Nodejs/05_Iterators.md",
+    "Nodejs/02_BASIC JAVASCRIPT.md",
+    "Nodejs/01_BASIC FUNDAMENTALS.md",
+    "Todo App.md"
   ]
 }
