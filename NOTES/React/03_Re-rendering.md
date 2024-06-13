@@ -22,7 +22,26 @@ The more the components that are getting re-rendered, the worse.
 
 ###### HOW TO DECREASE THE RE-RENDERING
 1. Push the state into the component that you want to change.
-2. Using memo in react.
+2. Using memo in react. --> `memo lets you skip re-rendering a component when props are unchanged` 
+**NOTE** :- You need to wrap re-rendering component in div to perform re-rendering.
+`<div><HeaderComponent></HeaderComponent></div>`
+
+###### How to memoize the component
+
+Normal Component
+
+	function Header({title}){
+		return <div>{title}</div>
+	}
+
+Memo component
+	`import React, {memo} from "react"`
+
+	const Header = memo(function Header({title}){
+		return <div>{title}</div>
+	})
+
+
 
 **Programs :-**
 1. Create a react app that has a -
@@ -33,6 +52,7 @@ The more the components that are getting re-rendered, the worse.
    2. Create two headers with some title .
    3. Every time a button is clicked the title of one header will change.
    4. Important :- Reduce the re-rendering of the components.
+3. Write program using memo and show limiting in re-rendering, u can display multiple headers and show re-rendering in few elements only.
 	
    
 

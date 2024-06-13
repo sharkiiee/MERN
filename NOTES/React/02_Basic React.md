@@ -77,7 +77,7 @@ Following is the example of state :-
 `JSON.stringify(nameOftheObject)`
 
 **How to add another element to the array**
-Their is this `...` using this we can add another element to the array.
+Their is this spread syntax `...` using this we can add another element to the array.
 
 	arr ---> [2,3]
 	[...arr,4] ---> [2,3,4]
