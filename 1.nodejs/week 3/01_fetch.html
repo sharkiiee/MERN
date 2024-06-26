@@ -1,0 +1,54 @@
+<!-- Write a frontend code to hit the end point https://fakerapi.it/api/v1/persons that gets back the data and render it on the screen using fetch. -->
+
+<!-- - Follow these constraints :-
+		1. Use async await 
+		2. Use .then syntax of promises. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        async function getAnimalData(){
+            const response = await fetch("https://fakerapi.it/api/v1/persons");
+            const finalData = await response.json();
+            document.getElementById("container").innerHTML = JSON.stringify(finalData.data);
+        }
+    </script> -->
+    <script>
+    function getAnimalData()
+    {
+        fetch("https://fakerapi.it/api/v1/persons")
+        .then((response) =>{
+            const finalData = response.json()
+            .then((finalData)=>{
+                document.getElementById("container").innerHTML = JSON.stringify(finalData.data);
+            })
+        })
+    }
+</script>
+    <button onclick="getAnimalData()">Get animal data</button>
+    <div id="container"></div>
+</body>
+
+</html>
+
+
+<!-- Using .then promisified syntax. -->
+
+<!-- <script>
+    function getAnimalData()
+    {
+        fetch("https://fakerapi.it/api/v1/persons")
+        .then((response) =>{
+            const finalData = response.json()
+            .then((finalData)=>{
+                document.getElementById("container").innerHTML = JSON.stringify(finalData.data);
+            })
+        })
+    }
+</script> -->

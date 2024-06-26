@@ -38,5 +38,4 @@ Zod now provides a more convenient way to coerce primitive values.
 	const schema = z.coerce.string();
 	schema.parse("tuna");  //"tuna"
 	schema.parse(12);      //"12"
-	schema.parse(true);    //"true
-	"
+	schema.parse(true);    //"true"
