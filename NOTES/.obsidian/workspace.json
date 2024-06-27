@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EXPRESS/07_Zod.md",
+                "file": "0_LEARN BY PROGRAM/HTTP AND ZOD.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "EXPRESS/07_Zod.md",
+                "file": "0_LEARN BY PROGRAM/HTTP AND ZOD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "EXPRESS/07_Zod.md",
+                "file": "0_LEARN BY PROGRAM/HTTP AND ZOD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EXPRESS/07_Zod.md"
+                "file": "0_LEARN BY PROGRAM/HTTP AND ZOD.md"
               }
             }
           }
@@ -209,6 +209,9 @@
   },
   "active": "20b78ddd92045abd",
   "lastOpenFiles": [
+    "EXPRESS/07_Zod.md",
+    "0_LEARN BY PROGRAM/HTTP AND ZOD.md",
+    "0_LEARN BY PROGRAM",
     "DATABASE/03_Mongoose.md",
     "DATABASE/02_MongoDB.md",
     "DATABASE/04_CRUD API.md",
@@ -218,13 +221,11 @@
     "EXPRESS/Axios.md",
     "EXPRESS/08_API.md",
     "EXPRESS/05_Authentication.md",
-    "EXPRESS/07_Zod.md",
     "DATABASE",
     "Nodejs/find function.md",
     "Nodejs/07_Arrays.md",
     "Nodejs/05_Iterators.md",
     "EXPRESS/04_Middleware's.md",
-    "Untitled",
     "React/05_Hooks.md",
     "React/06_Axios.md",
     "React/04_Key and wrapper component.md",
@@ -235,7 +236,6 @@
     "React/01_Basic React.md",
     "EXPRESS/03_Request Methods.md",
     "Nodejs/09_Filter.md",
-    "Nodejs/02_BASIC JAVASCRIPT.md",
-    "Todo App.md"
+    "Nodejs/02_BASIC JAVASCRIPT.md"
   ]
 }
