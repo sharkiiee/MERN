@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_LEARN BY PROGRAM/HTTP AND ZOD.md",
+                "file": "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_LEARN BY PROGRAM/HTTP AND ZOD.md",
+                "file": "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0_LEARN BY PROGRAM/HTTP AND ZOD.md",
+                "file": "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0_LEARN BY PROGRAM/HTTP AND ZOD.md"
+                "file": "0_LEARN BY PROGRAM/06_Database, http routes , zod.md"
               }
             }
           }
@@ -209,8 +209,10 @@
   },
   "active": "20b78ddd92045abd",
   "lastOpenFiles": [
+    "0_LEARN BY PROGRAM/04_HTTP AND ZOD.md",
+    "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
+    "0_LEARN BY PROGRAM/05_Database.md",
     "EXPRESS/07_Zod.md",
-    "0_LEARN BY PROGRAM/HTTP AND ZOD.md",
     "0_LEARN BY PROGRAM",
     "DATABASE/03_Mongoose.md",
     "DATABASE/02_MongoDB.md",
@@ -234,8 +236,6 @@
     "Nodejs/08_Maps.md",
     "EXPRESS/06_Global Catches.md",
     "React/01_Basic React.md",
-    "EXPRESS/03_Request Methods.md",
-    "Nodejs/09_Filter.md",
-    "Nodejs/02_BASIC JAVASCRIPT.md"
+    "EXPRESS/03_Request Methods.md"
   ]
 }
