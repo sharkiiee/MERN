@@ -4,83 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "07dd5164e557a4d2",
+        "id": "9cd50de49fd5c5bd",
         "type": "tabs",
         "children": [
           {
-            "id": "603127c322a4e5a4",
+            "id": "c968adbcdf8534b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EXPRESS/05_Authentication.md",
+                "file": "0_LEARN BY PROGRAM/11_Basic React.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "009b3cd750217479",
+            "id": "a11a7b674213a440",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EXPRESS/08_API.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97654ea796eb3118",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "EXPRESS/08_API.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "38d78075fade8061",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DATABASE/01_Intro to Database.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "faac5ae4589fd4ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DATABASE/03_Mongoose.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "20b78ddd92045abd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0_LEARN BY PROGRAM/08_Routes connection by router.md",
+                "file": "0_LEARN BY PROGRAM/13_HOOKS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_LEARN BY PROGRAM/08_Routes connection by router.md",
+                "file": "0_LEARN BY PROGRAM/13_HOOKS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0_LEARN BY PROGRAM/08_Routes connection by router.md",
+                "file": "0_LEARN BY PROGRAM/13_HOOKS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0_LEARN BY PROGRAM/08_Routes connection by router.md"
+                "file": "0_LEARN BY PROGRAM/13_HOOKS.md"
               }
             }
           }
@@ -207,36 +159,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "20b78ddd92045abd",
+  "active": "a11a7b674213a440",
   "lastOpenFiles": [
+    "React/06_useEffect.md",
+    "0_LEARN BY PROGRAM/13_HOOKS.md",
+    "0_LEARN BY PROGRAM/11_Basic React.md",
+    "0_LEARN BY PROGRAM/12_Re-rendering.md",
+    "React/05_Hooks.md",
+    "Nodejs/08_Maps.md",
+    "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
+    "React/03_Re-rendering.md",
+    "Untitled.md",
+    "React/01_Basic React.md",
+    "React/02_Basic React.md",
     "0_LEARN BY PROGRAM/07_Database CRUD and HTTP routes.md",
     "0_LEARN BY PROGRAM/08_Routes connection by router.md",
-    "Untitled",
-    "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
-    "0_LEARN BY PROGRAM/04_HTTP AND ZOD.md",
+    "React/06_Axios.md",
+    "EXPRESS/05_Authentication.md",
+    "EXPRESS/08_API.md",
+    "DATABASE/01_Intro to Database.md",
+    "DATABASE/03_Mongoose.md",
+    "DATABASE/04_CRUD API.md",
+    "Nodejs/find function.md",
     "0_LEARN BY PROGRAM/05_Database.md",
+    "Untitled",
+    "0_LEARN BY PROGRAM/04_HTTP AND ZOD.md",
     "EXPRESS/07_Zod.md",
     "0_LEARN BY PROGRAM",
-    "DATABASE/03_Mongoose.md",
     "DATABASE/02_MongoDB.md",
-    "DATABASE/04_CRUD API.md",
-    "DATABASE/01_Intro to Database.md",
     "Nodejs/01_BASIC FUNDAMENTALS.md",
     "EXPRESS/MAIN PROGRAM.md",
-    "EXPRESS/Axios.md",
-    "EXPRESS/08_API.md",
-    "EXPRESS/05_Authentication.md",
-    "DATABASE",
-    "Nodejs/find function.md",
-    "Nodejs/07_Arrays.md",
-    "Nodejs/05_Iterators.md",
-    "EXPRESS/04_Middleware's.md",
-    "React/05_Hooks.md",
-    "React/06_Axios.md",
-    "React/04_Key and wrapper component.md",
-    "React/03_Re-rendering.md",
-    "React/02_Basic React.md",
-    "Nodejs/08_Maps.md",
-    "EXPRESS/06_Global Catches.md"
+    "DATABASE"
   ]
 }

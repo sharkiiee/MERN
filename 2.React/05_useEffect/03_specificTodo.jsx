@@ -1,3 +1,6 @@
+// 3. Create bunch of button component with respective id i.e. 1,2,3,4 .
+// 	- Every time any button in clicked the todo of that id will get appeared.
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 

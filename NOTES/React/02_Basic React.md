@@ -81,12 +81,4 @@ Their is this spread syntax `...` using this we can add another element to the a
 
 	arr ---> [2,3]
 	[...arr,4] ---> [2,3,4]
-
-**02_Programs**
-
-1.  Create you own custom react and create link to the google in it.
-2.  Create counter button using react 
-	- Must have cleaner syntax
-3. Create a basic todo application showing title and description of three to-dos.
-4. Add a button to the todo application that inserts the new todo.
 	  

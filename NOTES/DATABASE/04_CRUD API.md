@@ -1,4 +1,4 @@
-#### Databases usually allow access to 4 primitives
+	#### Databases usually allow access to 4 primitives
 1. Create Data 
 2. Read Data 
 3. Update Data 
@@ -69,6 +69,7 @@ Popularly known as CRUD
 
 		3. User.deleteMany({})  // deletes all your data.
 		
-		User.deleteOne({
+		User.deleteOne({//filter
 		username:"harkirat@gmail.com"
-		})
+		},{
+		username:username})
