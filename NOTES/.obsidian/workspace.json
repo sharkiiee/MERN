@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_LEARN BY PROGRAM/13_HOOKS.md",
+                "file": "0_LEARN BY PROGRAM/13_sideEffect-useMemo.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_LEARN BY PROGRAM/13_HOOKS.md",
+                "file": "0_LEARN BY PROGRAM/13_sideEffect-useMemo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0_LEARN BY PROGRAM/13_HOOKS.md",
+                "file": "0_LEARN BY PROGRAM/13_sideEffect-useMemo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0_LEARN BY PROGRAM/13_HOOKS.md"
+                "file": "0_LEARN BY PROGRAM/13_sideEffect-useMemo.md"
               }
             }
           }
@@ -161,20 +161,20 @@
   },
   "active": "a11a7b674213a440",
   "lastOpenFiles": [
-    "React/06_useEffect.md",
-    "0_LEARN BY PROGRAM/13_HOOKS.md",
-    "0_LEARN BY PROGRAM/11_Basic React.md",
-    "0_LEARN BY PROGRAM/12_Re-rendering.md",
-    "React/05_Hooks.md",
-    "Nodejs/08_Maps.md",
-    "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
+    "React/07_useMemo.md",
     "React/03_Re-rendering.md",
-    "Untitled.md",
-    "React/01_Basic React.md",
-    "React/02_Basic React.md",
+    "React/06_useEffect.md",
+    "React/06_Axios.md",
+    "React/05_Hooks.md",
+    "0_LEARN BY PROGRAM/13_sideEffect-useMemo.md",
     "0_LEARN BY PROGRAM/07_Database CRUD and HTTP routes.md",
     "0_LEARN BY PROGRAM/08_Routes connection by router.md",
-    "React/06_Axios.md",
+    "0_LEARN BY PROGRAM/11_Basic React.md",
+    "0_LEARN BY PROGRAM/12_Re-rendering.md",
+    "Nodejs/08_Maps.md",
+    "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
+    "React/01_Basic React.md",
+    "React/02_Basic React.md",
     "EXPRESS/05_Authentication.md",
     "EXPRESS/08_API.md",
     "DATABASE/01_Intro to Database.md",
