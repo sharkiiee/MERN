@@ -27,6 +27,7 @@ Some common hooks are :-
 
 #### 1. useState
 - Let’s you describe the state of your app Whenever state updates, it triggers a re-render which finally results in a DOM update.
+- You can't use useState in raw function, it can only be used inside a hook or component.
 
 **Programs :-**
 1. Connect the frontend and backend using axios in react. Title and description should be printed.

@@ -10,6 +10,9 @@
 3. We usually have to do define all our components once.
 	- And then all we need is to update the state of our app , react takes care of re-rendering of the app.
 
+**Simple language what react do:-**
+	React takes the state as an input , reconcile how your should look like and then putting things into your screen.
+
 #### What are the things that you need to worry while create react app ?
 *React jargons :-*
 Main:-

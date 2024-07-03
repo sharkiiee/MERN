@@ -1,4 +1,4 @@
-## sideEffect()
+## useEffect()
 
 **Programs :-**
 1. Write the program for fetching todos from the backend , use useEffect() for side effects.
@@ -19,8 +19,8 @@ If I ask you to create an app that does two things -
 1. Increases a counter by 1 
 2. Lets user put a value in an input box (n) and you need to show sum from 1-n 
 3. One restriction - everything needs to be inside App
-4. Try not to do extra re-renders or use additional state.
-**Solution :-** 
+4. Try not to do extra re-renders or use additional state variables.
+**Solution :-** https://shorturl.at/x5kdc
 
 
 
