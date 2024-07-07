@@ -12,6 +12,7 @@
 	Description : Adding new user in the database
 	Header Input : username, password,
 	validation : check the inputs are valid
+	Authentication : User can't insert more than two kidneys.
 	Output : "${username} is been added to our database"
 
 - PUT /user/updatekidney
