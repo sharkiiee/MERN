@@ -11,11 +11,9 @@
             "id": "c968adbcdf8534b0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "0_LEARN BY PROGRAM/17_React-Routing.md",
-                "mode": "source",
-                "source": false
+                "file": "React/16_Routing-propdrilling-contextApi.pdf"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_LEARN BY PROGRAM/17_React-Routing.md",
+                "file": "React/16_Routing-propdrilling-contextApi.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0_LEARN BY PROGRAM/17_React-Routing.md",
+                "file": "React/16_Routing-propdrilling-contextApi.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0_LEARN BY PROGRAM/17_React-Routing.md"
+                "file": "React/16_Routing-propdrilling-contextApi.pdf"
               }
             }
           }
@@ -148,8 +146,14 @@
   },
   "active": "c968adbcdf8534b0",
   "lastOpenFiles": [
-    "Untitled.md",
+    "React/15_Context API.md",
+    "React/13_lazy Loading.md",
+    "React/14_Prop-Drilling.md",
+    "React/16_Routing-propdrilling-contextApi.pdf",
+    "0_LEARN BY PROGRAM/18_Context API.md",
     "0_LEARN BY PROGRAM/17_React-Routing.md",
+    "0_LEARN BY PROGRAM/12_Re-rendering.md",
+    "Untitled.md",
     "React/09_customHooks.md",
     "React/10_useRef.md",
     "React/11_Router.md",
@@ -169,13 +173,7 @@
     "React/01_Basic React.md",
     "React/05_Hooks.md",
     "React/06_useEffect.md",
-    "0_LEARN BY PROGRAM/11_Basic React.md",
     "Pasted image 20240703185616.png",
-    "React/07_useMemo.md",
-    "React/03_Re-rendering.md",
-    "React/06_Axios.md",
-    "0_LEARN BY PROGRAM/12_Re-rendering.md",
-    "Nodejs/08_Maps.md",
     "Untitled",
     "0_LEARN BY PROGRAM",
     "DATABASE"

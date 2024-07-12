@@ -8,3 +8,9 @@
 1. Make two buttons and everytime you click on the button it will take you to the new page.
 	- showing Client side Routing. -- i.e. Do not perform hard reload of the page.
 **Solution :-** https://shorturl.at/MgQws
+
+
+## Lazy loading
+
+1. Write a program that shows the lazy loading of the files.
+**Solution :-** https://shorturl.at/ZzNy2
