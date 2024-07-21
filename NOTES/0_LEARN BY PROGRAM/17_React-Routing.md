@@ -1,4 +1,9 @@
-## Client side bundling
+## Client side routing
+
+- Show client side routing by Creating two routes `/` and `/dashboard` that will take you to the landing page and dashboard page.
+**Solution :-** https://gist.github.com/sharkiiee/322d1820ed42818a77db73590b15e0e1.js
+
+## Another program - Hard Reload
 
 1. Make two buttons and everytime you click on the button it will take you to the new page.
 	- showing Client side Bundling. -- i.e. Performing hard reload of the page.
