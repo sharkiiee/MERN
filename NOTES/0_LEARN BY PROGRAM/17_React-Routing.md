@@ -17,4 +17,4 @@
 ## Lazy loading
 
 1. Write a program that shows the lazy loading of the files.
-**Solution :-** https://shorturl.at/ZzNy2
+**Solution :-** https://gist.github.com/sharkiiee/c35e6517b2831a203957cacd9054200a
