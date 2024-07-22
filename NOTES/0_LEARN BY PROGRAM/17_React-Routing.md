@@ -1,8 +1,7 @@
 ## Client side routing
 
 - Show client side routing by Creating two routes `/` and `/dashboard` that will take you to the landing page and dashboard page.
-**Solution :-** https://gist.github.com/sharkiiee/322d1820ed42818a77db73590b15e0e1.js
-
+**Solution :-**<script src="https://gist.github.com/sharkiiee/1865d8832ab5379471c8dd3f29e584a8.js"></script>
 ## Another program - Hard Reload
 
 1. Make two buttons and everytime you click on the button it will take you to the new page.
