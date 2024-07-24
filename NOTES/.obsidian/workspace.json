@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_LEARN BY PROGRAM/17_React-Routing.md",
+                "file": "0_LEARN BY PROGRAM/19_Atoms.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_LEARN BY PROGRAM/17_React-Routing.md",
+                "file": "0_LEARN BY PROGRAM/19_Atoms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0_LEARN BY PROGRAM/17_React-Routing.md",
+                "file": "0_LEARN BY PROGRAM/19_Atoms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0_LEARN BY PROGRAM/17_React-Routing.md"
+                "file": "0_LEARN BY PROGRAM/19_Atoms.md"
               }
             }
           }
@@ -148,11 +148,12 @@
   },
   "active": "c968adbcdf8534b0",
   "lastOpenFiles": [
-    "React/12_useNavigate.md",
+    "0_LEARN BY PROGRAM/18_Context API.md",
+    "0_LEARN BY PROGRAM/19_Atoms.md",
     "0_LEARN BY PROGRAM/17_React-Routing.md",
+    "React/12_useNavigate.md",
     "React/13_client side rendering.md",
     "React/11_Router.md",
-    "0_LEARN BY PROGRAM/18_Context API.md",
     "React/16_Routing-propdrilling-contextApi.pdf",
     "React/15_Context API.md",
     "React/13_lazy Loading.md",
@@ -175,7 +176,6 @@
     "0_LEARN BY PROGRAM/Untitled",
     "React/01_Basic React.md",
     "React/05_Hooks.md",
-    "React/06_useEffect.md",
     "Pasted image 20240703185616.png",
     "Untitled",
     "0_LEARN BY PROGRAM",

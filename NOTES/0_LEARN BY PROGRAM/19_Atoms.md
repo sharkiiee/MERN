@@ -1,0 +1,2 @@
+1. Write a simple count program that shows atom working every time you click on the increase and decrease count button. CountRenderer should be some other component to show the value of count. 
+   **Solution:-** https://gist.github.com/sharkiiee/fc2ae722dbae01096649956b7550cb28
