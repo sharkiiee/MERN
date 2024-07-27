@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/20_Selectors.md",
+                "file": "0_LEARN BY PROGRAM/20_Selectors.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/20_Selectors.md",
+                "file": "0_LEARN BY PROGRAM/20_Selectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/20_Selectors.md",
+                "file": "0_LEARN BY PROGRAM/20_Selectors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/20_Selectors.md"
+                "file": "0_LEARN BY PROGRAM/20_Selectors.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "c968adbcdf8534b0",
   "lastOpenFiles": [
-    "React/19_Recoil.md",
     "React/20_Selectors.md",
+    "React/19_Recoil.md",
     "0_LEARN BY PROGRAM/20_Selectors.md",
     "React/18_State Management.md",
     "0_LEARN BY PROGRAM/19_Atoms.md",
