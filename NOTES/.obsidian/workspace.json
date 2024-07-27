@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_LEARN BY PROGRAM/19_Atoms.md",
+                "file": "React/20_Selectors.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_LEARN BY PROGRAM/19_Atoms.md",
+                "file": "React/20_Selectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0_LEARN BY PROGRAM/19_Atoms.md",
+                "file": "React/20_Selectors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0_LEARN BY PROGRAM/19_Atoms.md"
+                "file": "React/20_Selectors.md"
               }
             }
           }
@@ -148,8 +148,12 @@
   },
   "active": "c968adbcdf8534b0",
   "lastOpenFiles": [
-    "0_LEARN BY PROGRAM/18_Context API.md",
+    "React/19_Recoil.md",
+    "React/20_Selectors.md",
+    "0_LEARN BY PROGRAM/20_Selectors.md",
+    "React/18_State Management.md",
     "0_LEARN BY PROGRAM/19_Atoms.md",
+    "0_LEARN BY PROGRAM/18_Context API.md",
     "0_LEARN BY PROGRAM/17_React-Routing.md",
     "React/12_useNavigate.md",
     "React/13_client side rendering.md",
@@ -171,11 +175,7 @@
     "0_LEARN BY PROGRAM/08_Routes connection by router.md",
     "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
     "0_LEARN BY PROGRAM/13_useEffect-useMemo.md",
-    "0_LEARN BY PROGRAM/14_useCallback&useRef.md",
-    "React/08_useCallback.md",
     "0_LEARN BY PROGRAM/Untitled",
-    "React/01_Basic React.md",
-    "React/05_Hooks.md",
     "Pasted image 20240703185616.png",
     "Untitled",
     "0_LEARN BY PROGRAM",
