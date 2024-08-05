@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/21_Asynchronous Data Queries.md",
+                "file": "0_LEARN BY PROGRAM/30_tailwind.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/21_Asynchronous Data Queries.md",
+                "file": "0_LEARN BY PROGRAM/30_tailwind.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/21_Asynchronous Data Queries.md",
+                "file": "0_LEARN BY PROGRAM/30_tailwind.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/21_Asynchronous Data Queries.md"
+                "file": "0_LEARN BY PROGRAM/30_tailwind.md"
               }
             }
           }
@@ -148,8 +148,12 @@
   },
   "active": "c968adbcdf8534b0",
   "lastOpenFiles": [
-    "React/20_Selectors.md",
+    "0_LEARN BY PROGRAM/28_html-basic.md",
+    "HTML and CSS/Topics.md",
+    "HTML and CSS",
+    "0_LEARN BY PROGRAM/30_tailwind.md",
     "React/21_Asynchronous Data Queries.md",
+    "React/20_Selectors.md",
     "0_LEARN BY PROGRAM/20_Selectors.md",
     "React/19_Recoil.md",
     "React/18_State Management.md",
@@ -172,12 +176,8 @@
     "0_LEARN BY PROGRAM/15_TodoReact.md",
     "EXPRESS/07_Zod.md",
     "0_LEARN BY PROGRAM/07_ImpDatabase CRUD and HTTP routes.md",
-    "0_LEARN BY PROGRAM/README.md.md",
-    "0_LEARN BY PROGRAM/08_Routes connection by router.md",
-    "0_LEARN BY PROGRAM/06_Database, http routes , zod.md",
     "0_LEARN BY PROGRAM/Untitled",
     "Pasted image 20240703185616.png",
-    "Untitled",
     "0_LEARN BY PROGRAM",
     "DATABASE"
   ]

@@ -1,0 +1,1 @@
+1. Create a simple navbar `home,about,contact`  , every time you hover upon these it will show the cursor pointer, background- dark purple, padding - 4px , display : flex
