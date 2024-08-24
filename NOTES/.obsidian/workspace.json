@@ -11,11 +11,9 @@
             "id": "c968adbcdf8534b0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "0_LEARN BY PROGRAM/30_tailwind.md",
-                "mode": "source",
-                "source": false
+                "file": "React/16_Routing-propdrilling-contextApi.pdf"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_LEARN BY PROGRAM/30_tailwind.md",
+                "file": "React/16_Routing-propdrilling-contextApi.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0_LEARN BY PROGRAM/30_tailwind.md",
+                "file": "React/16_Routing-propdrilling-contextApi.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0_LEARN BY PROGRAM/30_tailwind.md"
+                "file": "React/16_Routing-propdrilling-contextApi.pdf"
               }
             }
           }
@@ -146,25 +144,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "078f32c8bcf30a81",
+  "active": "c968adbcdf8534b0",
   "lastOpenFiles": [
+    "React/17_Context API.md",
+    "React/19_Recoil.md",
+    "React/16_Routing-propdrilling-contextApi.pdf",
+    "React/13_client side rendering.md",
+    "0_LEARN BY PROGRAM/30_tailwind.md",
     "0_LEARN BY PROGRAM/extra stuffs",
     "0_LEARN BY PROGRAM/28_html-basic.md",
     "HTML and CSS/Topics.md",
     "HTML and CSS",
-    "0_LEARN BY PROGRAM/30_tailwind.md",
     "React/21_Asynchronous Data Queries.md",
     "React/20_Selectors.md",
     "0_LEARN BY PROGRAM/20_Selectors.md",
-    "React/19_Recoil.md",
     "React/18_State Management.md",
     "0_LEARN BY PROGRAM/19_Atoms.md",
     "0_LEARN BY PROGRAM/18_Context API.md",
     "0_LEARN BY PROGRAM/17_React-Routing.md",
     "React/12_useNavigate.md",
-    "React/13_client side rendering.md",
     "React/11_Router.md",
-    "React/16_Routing-propdrilling-contextApi.pdf",
     "React/15_Context API.md",
     "React/13_lazy Loading.md",
     "React/14_Prop-Drilling.md",
@@ -175,7 +174,6 @@
     "EXPRESS/MAIN PROGRAM.md",
     "0_LEARN BY PROGRAM/16_Hooks Assignment.md",
     "0_LEARN BY PROGRAM/15_TodoReact.md",
-    "EXPRESS/07_Zod.md",
     "Pasted image 20240703185616.png",
     "0_LEARN BY PROGRAM",
     "DATABASE"
