@@ -14,8 +14,11 @@
 5. Create a basic todo application showing title and description of three to-dos.
 **Solution :-** https://github.com/sharkiiee/MERN/blob/main/2.React/02_BasicReact/04_basicTodo/todo.jsx
 
-6. Add a button to the todo application that inserts the new todo.
+6. Create a basic todo application showing title and description of three to-dos but this time when you click on the button only then it will render the todo.
+**Solution :-** https://gist.github.com/sharkiiee/b45356d3cb8d3a62e310715af1506b76
+
+8. Add a button to the todo application that inserts the new todo.
 **Solution :-** https://github.com/sharkiiee/MERN/blob/main/2.React/02_BasicReact/04_basicTodo/addTodo.jsx
 
-7. Create a todo application taking all the todos from the user and adding them as new todos and another button that hide all the todos to display and click again to show all the todos.
+8. Create a todo application taking all the todos from the user and adding them as new todos and another button that hide all the todos to display and click again to show all the todos.
 **Solution :- **https://gist.github.com/sharkiiee/356ec3a1428872ed0b0c526f6dc54d68
